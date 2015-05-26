@@ -1,0 +1,18 @@
+﻿@model  MyTvChannel.Models.MyShows
+
+<!--I think a jumbotron would suit this page well-->
+<div class="jumbotron text-center">
+    <h3 class="page-header">@Model.Title</h3>
+    <img src="@Model.imageUrl" />
+    <p>
+        <h4><i>By: </i>@Model.MyChannel.Name</h4>
+        <h4><i>Price: </i>@Model.Price.ToString("$#,##0.00")</h4>
+        <div class="col-sm-6">
+            @Html.ActionLink("Edit", "EditMyChannel", new { id = Model.Id }, new { @class = "btn btn-info btn-block" })
+        </div>
+        <div class="col-sm-6">
+            @Html.ActionLink("Delete", "DeleteMyShows", new { id = Model.Id }, new { @class = "btn btn-danger btn-block" })
+        </div>
+    </p>
+
+</div>
