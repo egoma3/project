@@ -17,7 +17,7 @@ namespace MyTvChannel.Models
         public string Title { get; set; }
 
         [Required]
-        public string Category { get; set; }
+        public ShowCategory Category { get; set; }
 
         [Range(1.50, 2.00 )]
         public double Price { get; set; }
@@ -32,4 +32,12 @@ namespace MyTvChannel.Models
 
         public virtual MyChannel MyChannel { get; set; }
     } 
+
+    public enum ShowCategory
+    {
+        News,
+        Documentary,
+        Sport,
+        Movie
+    }
 }

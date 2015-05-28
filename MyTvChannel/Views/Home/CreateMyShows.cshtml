@@ -1,0 +1,19 @@
+﻿@model MyTvChannel.Models.MyShows
+<br />
+<h3 class="text-center page-header">Add Shows</h3>
+<div class="container">
+    <form method="post" class="well col-sm-6 col-sm-push-3">
+        @Html.LabelFor(x => x.Title) <br />
+        @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })<br />
+        @Html.LabelFor(x => x.Price) <br />
+        @Html.TextBoxFor(x => x.Price, new { @class = "form-control" })<br />
+        @Html.LabelFor(x => x.imageUrl) <br />
+        @Html.TextBoxFor(x => x.imageUrl, new { @class = "form-control" })<br />
+        @Html.LabelFor(x => x.Category) <br />
+        @Html.EnumDropDownListFor(x => x.Category, new { @class = "form-control" }) <br />
+        @Html.HiddenFor(x => x.MyChannelId)
+        @Html.HiddenFor(x => x.Id)
+        <button type="submit" class="btn btn-info btn-block">Submit</button>
+
+    </form>
+</div>

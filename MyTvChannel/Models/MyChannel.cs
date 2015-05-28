@@ -13,12 +13,12 @@ namespace MyTvChannel.Models
         [Required]
         public string Name { get; set;}
 
+        [Required]
         public string imageUrl { get; set; }
 
         public DateTime? DateDeleted { get; set; }
 
         public virtual List<MyShows> myShows { get; set; }
-
 
 
     }

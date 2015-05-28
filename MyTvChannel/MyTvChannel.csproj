@@ -182,6 +182,14 @@
     <Compile Include="Migrations\201505260608550_second.Designer.cs">
       <DependentUpon>201505260608550_second.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201505270053438_third.cs" />
+    <Compile Include="Migrations\201505270053438_third.Designer.cs">
+      <DependentUpon>201505270053438_third.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201505280355259_Designer.cs" />
+    <Compile Include="Migrations\201505280355259_Designer.Designer.cs">
+      <DependentUpon>201505280355259_Designer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -253,6 +261,8 @@
     <Content Include="Views\Home\AddMyChannel.cshtml" />
     <Content Include="Views\Home\MyChannelDetails.cshtml" />
     <Content Include="Views\Home\MyShowDetails.cshtml" />
+    <Content Include="Views\Home\CreateMyShows.cshtml" />
+    <Content Include="Views\Home\EditMyChannel.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -270,6 +280,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201505260608550_second.resx">
       <DependentUpon>201505260608550_second.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201505270053438_third.resx">
+      <DependentUpon>201505270053438_third.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201505280355259_Designer.resx">
+      <DependentUpon>201505280355259_Designer.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

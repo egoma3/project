@@ -1,0 +1,16 @@
+﻿@model MyTvChannel.Models.MyChannel
+
+<br />
+<h3 class="text-center page-header">Edit Channel</h3>
+<div class="container">
+    <form method="post" class="well col-sm-6 col-sm-offset-3">
+        @Html.LabelFor(x => x.Name) <br />
+        @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })<br />
+        <br />
+
+        @Html.LabelFor(x => x.imageUrl) <br />
+        @Html.TextBoxFor(x => x.imageUrl, new { @class = "form-control" })<br />
+        @Html.HiddenFor(x => x.Id)
+        <button type="submit" class="btn btn-info">Submit</button>
+    </form>
+</div>

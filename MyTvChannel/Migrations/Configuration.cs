@@ -36,17 +36,17 @@ namespace MyTvChannel.Migrations
                 
                 );
             context.myShows.AddOrUpdate(x =>x.Id,
-                new MyShows() { Id = 1, MyChannelId = 1, Category = "News", Name = "CNN", Title = "NASA WARNING ", Price = 1.80, imageUrl = "https://www.youtube.com/embed/A8PzpxwCASs", DateDeleted = null },
-                new MyShows() { Id = 2, MyChannelId = 1, Category = "News", Name = "CNN", Title = "Cell Phone Cancer", Price = 1.80, imageUrl = "https://www.youtube.com/embed/PhKUc4nevxM", DateDeleted = null },
+                new MyShows() { Id = 1, MyChannelId = 1, Category = ShowCategory.News, Name = "CNN", Title = "NASA WARNING ", Price = 1.80, imageUrl = "https://www.youtube.com/embed/A8PzpxwCASs", DateDeleted = null },
+                new MyShows() { Id = 2, MyChannelId = 1, Category = ShowCategory.News, Name = "CNN", Title = "Cell Phone Cancer", Price = 1.80, imageUrl = "https://www.youtube.com/embed/PhKUc4nevxM", DateDeleted = null },
 
-                new MyShows() { Id = 3, MyChannelId = 2, Category = "Documentary", Name = "Discovery", Title = "Early Humans and Water", Price = 1.50, imageUrl = "https://www.youtube.com/embed/v-Fzf8CLg1s", DateDeleted = null },
-                new MyShows() { Id = 4, MyChannelId = 2, Category = "Documentary", Name = "Discovery", Title = "Eaten Alive Sneak Peek", Price = 1.50, imageUrl = "https://www.youtube.com/embed/5rrM3zl4J_g", DateDeleted = null },
+                new MyShows() { Id = 3, MyChannelId = 2, Category = ShowCategory.Documentary, Name = "Discovery", Title = "Early Humans and Water", Price = 1.50, imageUrl = "https://www.youtube.com/embed/v-Fzf8CLg1s", DateDeleted = null },
+                new MyShows() { Id = 4, MyChannelId = 2, Category = ShowCategory.Documentary, Name = "Discovery", Title = "Eaten Alive Sneak Peek", Price = 1.50, imageUrl = "https://www.youtube.com/embed/5rrM3zl4J_g", DateDeleted = null },
 
-                new MyShows() { Id = 5, MyChannelId = 3, Category = "Movies", Name = "Sci-Fi", Title = "Avengers", Price = 1.75, imageUrl = "https://www.youtube.com/embed/u1OKBqHICMQ", DateDeleted = null },
-                new MyShows() { Id = 6, MyChannelId = 3, Category = "Movies", Name = "Sci-Fi", Title = "Terminator", Price = 1.75, imageUrl = "https://www.youtube.com/embed/jNU_jrPxs-0", DateDeleted = null },
+                new MyShows() { Id = 5, MyChannelId = 3, Category = ShowCategory.Movie, Name = "Sci-Fi", Title = "Avengers", Price = 1.75, imageUrl = "https://www.youtube.com/embed/u1OKBqHICMQ", DateDeleted = null },
+                new MyShows() { Id = 6, MyChannelId = 3, Category = ShowCategory.Movie, Name = "Sci-Fi", Title = "Terminator", Price = 1.75, imageUrl = "https://www.youtube.com/embed/jNU_jrPxs-0", DateDeleted = null },
 
-                new MyShows() { Id = 7, MyChannelId = 4, Category = "Sport", Name = "ESPN", Title = "Top 10 Dunks from 2014-2015 NBA ", Price = 2.00, imageUrl = "https://www.youtube.com/embed/aInOK6T6n1w", DateDeleted = null },
-                new MyShows() { Id = 8, MyChannelId = 4, Category = "Sport", Name = "ESPN", Title = "One-on-One Tricking Battle", Price = 2.00, imageUrl = "https://www.youtube.com/embed/SAjhv35-q80?list=RDENKh-1qUvJA", DateDeleted = null }
+                new MyShows() { Id = 7, MyChannelId = 4, Category = ShowCategory.Sport, Name = "ESPN", Title = "Top 10 Dunks from 2014-2015 NBA ", Price = 2.00, imageUrl = "https://www.youtube.com/embed/aInOK6T6n1w", DateDeleted = null },
+                new MyShows() { Id = 8, MyChannelId = 4, Category = ShowCategory.Sport, Name = "ESPN", Title = "One-on-One Tricking Battle", Price = 2.00, imageUrl = "https://www.youtube.com/embed/SAjhv35-q80?list=RDENKh-1qUvJA", DateDeleted = null }
                 
                 );
         }
